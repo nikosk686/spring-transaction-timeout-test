@@ -12,7 +12,7 @@ public class DemoService {
     @Autowired
     private DemoRepository repository;
 
-    @Transactional(timeout = 10)
+    @Transactional(readOnly = true, timeout = 15)
     public void sleep() {
         repository.sleep();
     }
