@@ -12,4 +12,4 @@ On each repository there is a method that causes DB sleep for 30 seconds.
 The service method that calls the above method has a transaction timeout configuration on 15 seconds.
 * Postgers flow timeouts on 15 seconds.
 * DB2 flow **without** `queryTimeoutInterruptProcessingMode=2` timeouts on 30 secs (after DB sleep has finished)
-DB2 flow **with** `queryTimeoutInterruptProcessingMode=2` timeouts on 15 secs (as per the service's configuration)
+* DB2 flow **with** `queryTimeoutInterruptProcessingMode=2` timeouts on 15 secs (as per the service's configuration)
